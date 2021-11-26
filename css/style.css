@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Questrial;
+    src: url('../aset/font/Questrial-Regular.ttf');
+}
+
+body {
+    font-family: Questrial;
+    line-height: 1.5rem;
+}
+
+
+/* nav */
+
+.navbar {
+    display: flex;
+    padding: 2rem 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.navbar .menu {
+    margin-left: auto;
+}
+
+.navbar .menu .navbar-link {
+    padding: 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .menu .active,
+.navbar .menu .navbar-link:hover {
+    color: #fc5185;
+    font-weight: bold;
+}
+
+.navbar .fa-bars {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* /nav */
+
+
+/* sidenav */
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fc5185;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .active,
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* /sidenav */
+
+
+/* header */
+
+header {
+    height: 500px;
+    background: url('../aset/images/header-background.jpg');
+    background-position: center;
+}
+
+.header h1 {
+    text-align: left;
+    /* margin: auto; */
+    width: 600px;
+    line-height: 3rem;
+    max-width: 100%;
+    font-size: 3rem;
+    color: white;
+    margin-top: 2rem;
+    color: #fc5185;
+}
+
+.header h3 {
+    text-align: left;
+    width: 400px;
+    max-width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.header .daftar-button {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.header a {
+    display: flex;
+    justify-content: start;
+    text-decoration: none;
+}
+
+.header .daftar-button {
+    background-color: #fc5185;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.header .daftar-button:hover {
+    background-color: #fa1a5d;
+}
+
+
+/* /header */
+
+
+/* course */
+
+.course {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.course-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+.course h3 {
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 1px 2px 5px 2px #00000059;
+    margin-bottom: 1rem;
+}
+
+.course-card .card-title {
+    text-align: center;
+}
+
+.course-card .card-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* /course */
+
+
+/* review */
+
+.review {
+    padding: 5rem 0;
+    background-color: #f0f8ff;
+}
+
+.review-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.review .review-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 1px 2px 5px 2px #00000059;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.review .review-card .review-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #d2d2d2;
+    color: #fc5185;
+}
+
+.review .review-card img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 1rem;
+}
+
+
+/* /review */
+
+
+/* langganan */
+
+.langganan {
+    background-color: white;
+    padding: 5rem 0;
+}
+
+.pelanggan {
+    display: flex;
+    justify-content: center;
+}
+
+.langganan .pelanggan img {
+    margin-left: -.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #fc5185;
+    border-radius: 50%;
+    width: 4rem;
+    transition: .5s;
+}
+
+.langganan .pelanggan img:hover {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.daftar {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.template-button {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.template-button a {
+    color: white;
+    text-decoration: none;
+    background-color: #112740;
+    padding: 1rem .5rem;
+    border-radius: 5px;
+    transition: .5s;
+    font-size: 18px;
+}
+
+.template-button a:hover {
+    background-color: #fc5185;
+    padding: 1rem 1rem;
+}
+
+
+/* /langganan */
+
+
+/* biodata */
+
+.biodata {
+    background-color: #fc5185;
+    padding: 5rem 0;
+}
+
+.biodata .bio-card {
+    width: 600px;
+    max-width: 100%;
+    background: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 1rem 0;
+    box-shadow: 1px 2px 5px 2px #00000059;
+}
+
+.biodata .bio-title {
+    margin-bottom: .5rem;
+}
+
+.biodata .bio-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.biodata .bio-image img {
+    display: block;
+    border-radius: 50%;
+    border: 3px solid #fc5185;
+    width: 150px;
+}
+
+.biodata .social-icon {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.biodata .social-icon .fab {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0 5px;
+    background-color: #112740;
+    color: white;
+}
+
+.biodata .social-icon .fab:hover {
+    background-color: #fc5185;
+}
+
+.biodata .bio-data {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.biodata table tr {
+    height: 1.5rem;
+    font-size: 18px;
+}
+
+
+/* /biodata */
+
+
+/* footer */
+
+.footer {
+    background-color: #112740;
+    padding: 3rem 0;
+    color: white;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footer h3 {
+    color: #fc5185;
+    margin-bottom: 1rem;
+}
+
+.footer .download-app {
+    margin-top: 1rem;
+}
+
+.footer .download-app img {
+    max-width: 100%;
+}
+
+.footer .download-app a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer .download-app a:hover {
+    opacity: .7;
+}
+
+.footer section {
+    margin-bottom: 2rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+}
+
+.footer ul li a:hover {
+    color: white;
+}
+
+
+/* /footer */
+
+
+/* footer2 */
+
+.footer2 {
+    padding: 15px 0;
+    background-color: #1f3854;
+}
+
+.footer2 .copyright {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.footer2 .social-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.footer2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer2 .social-icon .fab {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.footer2 .social-icon .fa-facebook-f {
+    background-color: #0050c7;
+}
+
+.footer2 .social-icon .fa-instagram {
+    background-color: #fa1977;
+}
+
+.footer2 .social-icon .fa-youtube {
+    background-color: #c70000;
+}
+
+.footer2 .social-icon .fa-twitter {
+    background-color: #3988ff;
+}
+
+.footer2 .social-icon .fa-linkedin-in {
+    background-color: #0057da;
+}
+
+.footer2 .social-icon .fab:hover {
+    opacity: .8;
+}
+
+
+/* /footer2 */
+
+@media only screen and (max-width: 768px) {
+    .footer2 .social-icon {
+        justify-content: center;
+    }
+    .footer2 .copyright {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar .menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar .fa-bars {
+        display: none;
+    }
+}
